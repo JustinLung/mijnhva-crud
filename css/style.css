@@ -105,7 +105,7 @@ table {
 }
 
 table:target {
-  display: block;
+  display: table;
 }
 
 th,
