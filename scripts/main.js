@@ -1,8 +1,9 @@
-import { getPages } from "./modules/fetch.js";
+import { renderPageTable } from "./modules/renderPage.js";
+import { renderFaqTable } from "./modules/renderFaq.js";
+import { renderTipTable } from "./modules/renderTip.js";
+import { renderSectionTable } from "./modules/renderSection.js";
 
-async function fillTable() {
-  const data = await getPages()
-  console.log(data);
-}
-
-fillTable()
+renderPageTable();
+renderFaqTable();
+renderTipTable();
+renderSectionTable();
