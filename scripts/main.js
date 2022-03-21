@@ -15,7 +15,7 @@ navItems.forEach(item=>{
   })
 })
 
-window.location.hash = '#page'
+window.location.hash = window.location.hash === '' ? '#page' : window.location.hash
 
 renderPageTable();
 renderFaqTable();
