@@ -5,6 +5,10 @@
   --black: #1a1a1a;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -89,6 +93,7 @@ table {
   background-color: var(--white);
   text-align: left;
   margin-bottom: 2em;
+  display: none;
 }
 
 .cta {
@@ -99,13 +104,17 @@ table {
   border-radius: 20px;
 }
 
+table:target {
+  display: block;
+}
+
 th,
 tr {
   font-size: 1rem;
 }
 
 td {
-  text-align: center;
+  text-align: left;
 }
 
 tbody:nth-child(even) tr {

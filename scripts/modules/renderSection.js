@@ -5,14 +5,13 @@ async function renderSectionTable() {
 
   for (let i = 0; i < data.length; i++) {
     //   TODO: RENDER DATA FROM API
-    console.log(data[i]);
     document.querySelector(".section-table").insertAdjacentHTML(
       "beforeend",
       `
         <tr>
             <td>${data[i].section_id}</td>
             <td>${data[i].title}</td>
-            <td>${data[i].body}</td>
+            <td>${data[i].body.length >= 100 ? `${data[i].body.substring(0, 100)}...` : data[i].body }</td>
             <td>${data[i].page_id}</td>
         </tr>`
     );
