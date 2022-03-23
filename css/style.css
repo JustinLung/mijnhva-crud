@@ -97,11 +97,13 @@ table {
 }
 
 .cta {
+  all: unset;
   text-decoration: none;
   background: var(--primary);
   color: var(--white);
   padding: 0.5em 0.8em;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 table:target {
@@ -120,4 +122,12 @@ td {
 tbody:nth-child(even) tr {
   color: var(--white);
   background-color: var(--primary);
+}
+
+tbody:nth-child(odd) a {
+  color: var(--black);
+}
+
+tbody:nth-child(even) a {
+  color: var(--white);
 }
