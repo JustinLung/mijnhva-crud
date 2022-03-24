@@ -18,7 +18,7 @@ async function renderFaqTable() {
             <td>${data[i].answer.length >= 100 ? `${data[i].answer.substring(0, 100)}...` : data[i].answer }</td>
             <td>${data[i].faq_category_id}</td>
             <td>${data[i].title}</td>
-            <td><a href="edit.html?question_id=${data[i].question_id}">Edit</a></td>
+            <td><a href="edit.html?id=${data[i].question_id}#faq">Edit</a></td>
         </tr>
       </a>
       `

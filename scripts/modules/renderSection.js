@@ -13,7 +13,7 @@ async function renderSectionTable() {
             <td>${data[i].title}</td>
             <td>${data[i].body.length >= 100 ? `${data[i].body.substring(0, 100)}...` : data[i].body }</td>
             <td>${data[i].page_id}</td>
-            <td><a href="edit.html?section_id=${data[i].section}">Edit</a></td>
+            <td><a href="edit.html?id=${data[i].section_id}#section">Edit</a></td>
         </tr>`
     );
   }
